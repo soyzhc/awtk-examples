@@ -2,7 +2,6 @@
 
 #### 项目介绍：
 
-- awtk-demos：AWTK 内置的演示 Demo，包含各种控件的使用方法
 - HelloWorld-Demo：最简单的入门 Demo，包含基本的文本和按钮控件使用方法
 - CleanAir-Demo：新风系统演示 Demo
 - Meter-Demo：普通工业仪表演示 Demo
@@ -18,27 +17,29 @@
 
 #### Windows 使用方法：
 
-1. 将 awtk 和 awtk-examples 下载到同一个文件夹下
+1. 确保已经安装好 VS2015（Visual C++）、Python2.7、SCons 等工具
 
-2. 修改 awtk 的 SConstruct 脚本使用 AGGE 渲染方式
+2. 将 awtk 和 awtk-examples 下载到同一个文件夹下
+
+3. 修改 awtk 的 SConstruct 脚本使用 AGGE 渲染方式
 
    ```
    NANOVG_BACKEND='AGGE'
    ```
 
-3. 进入 awtk 文件夹，在命令行中输入 scons 编译 awtk
+4. 进入 awtk 文件夹，在命令行中输入 scons 编译 awtk
 
    ```
    C:\zlgopen\awtk> scons
    ```
 
-4. 进入 awtk-examples 中某个项目文件夹，在命令行中输入 scons 编译项目
+5. 进入 awtk-examples 中某个项目文件夹，在命令行中输入 scons 编译项目
 
    ```
    C:\zlgopen\awtk-examples\HelloWorld-Demo> scons
    ```
 
-5. 进入项目的 bin 文件夹启动 demo
+6. 进入项目的 bin 文件夹启动 demo
 
    ```
    C:\zlgopen\awtk-examples\HelloWorld-Demo\bin> demo.exe
@@ -67,4 +68,18 @@
 
 
 
+> Eclipse 工程中的 awtk-demos 是 AWTK 的内置的示例，包含各种控件的使用方法
+>
 > 更详细的使用方法，请参考入门文档
+
+
+
+#### 运行效果截图：
+
+![HelloWorld-Demo](docs/images/helloworld_main.png)
+
+![CleanAir-Demo](docs/images/cleanair_main.png)
+
+![Meter-Demo](docs/images/meter_main.png)
+
+![Chart-Demo](docs/images/chart_main.png)
